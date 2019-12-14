@@ -241,7 +241,7 @@
             // 
             this.lb_duye.AutoSize = true;
             this.lb_duye.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_duye.Location = new System.Drawing.Point(490, 30);
+            this.lb_duye.Location = new System.Drawing.Point(447, 5);
             this.lb_duye.Name = "lb_duye";
             this.lb_duye.Size = new System.Drawing.Size(0, 19);
             this.lb_duye.TabIndex = 23;
@@ -278,9 +278,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(973, 552);
-            this.Controls.Add(this.pt_cay);
             this.Controls.Add(this.lb_duye);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pt_cay);
             this.Name = "Form2";
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.pt_cay)).EndInit();

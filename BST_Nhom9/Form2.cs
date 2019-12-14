@@ -51,7 +51,7 @@ namespace BST_Nhom9
                 return;
 
             }
-            string s;
+            //string s;
             //int nhi = 0;
 
             //int x = Convert.ToInt32(txt_sonut.Text);
@@ -146,7 +146,7 @@ namespace BST_Nhom9
 
         private void bt_pre_Click(object sender, EventArgs e)
         {
-            string s = "Preorder: ";
+            string s = "NLR: ";
             Graphics g = pt_cay.CreateGraphics();
             tree.Preorder(ref g, tree.tree, ref s);
             lb_duye.Text = s;
@@ -154,7 +154,7 @@ namespace BST_Nhom9
 
         private void bt_in_Click(object sender, EventArgs e)
         {
-            string s = "Inorder: ";
+            string s = "LNR: ";
             Graphics g = pt_cay.CreateGraphics();
             tree.Inorder(ref g, tree.tree, ref s);
             lb_duye.Text = s;
@@ -162,7 +162,7 @@ namespace BST_Nhom9
 
         private void bt_post_Click(object sender, EventArgs e)
         {
-            string s = "Postorder: ";
+            string s = "LRN: ";
             Graphics g = pt_cay.CreateGraphics();
             tree.Postorder(ref g, tree.tree, ref s);
             lb_duye.Text = s;
