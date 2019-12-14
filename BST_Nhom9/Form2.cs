@@ -43,6 +43,11 @@ namespace BST_Nhom9
         private void bt_random_Click(object sender, EventArgs e)
         {
             //int[] A = new int[100];
+            if (txt_sonut.Text == "")
+            {
+                MessageBox.Show("Chưa nhập dữ liệu!");
+                return;
+            }
             Graphics g = pt_cay.CreateGraphics();
             int sonut = Int32.Parse(txt_sonut.Text);
             if (sonut > 8)
@@ -81,6 +86,11 @@ namespace BST_Nhom9
 
         private void BT_search_Click(object sender, EventArgs e)
         {
+            if (txt_value.Text == "")
+            {
+                MessageBox.Show("Chưa nhập dữ liệu!");
+                return;
+            }
             Graphics g = pt_cay.CreateGraphics();
             int value = Convert.ToInt32(txt_value.Text);
             int kt = tree.search(ref g, tree.tree, value);
@@ -94,6 +104,11 @@ namespace BST_Nhom9
         private void bt_add_Click(object sender, EventArgs e)
         {
             //int[] A = new int[100];
+            if (txt_value.Text == "")
+            {
+                MessageBox.Show("Chưa nhập dữ liệu!");
+                return;
+            }
             Graphics g = pt_cay.CreateGraphics();
             int t = Convert.ToInt32(txt_value.Text);
             Random rd = new Random();
@@ -125,6 +140,11 @@ namespace BST_Nhom9
 
         private void bt_de_Click(object sender, EventArgs e)
         {
+            if (txt_value.Text == "")
+            {
+                MessageBox.Show("Chưa nhập dữ liệu!");
+                return;
+            }
             Graphics g = pt_cay.CreateGraphics();
             int t = Convert.ToInt32(txt_value.Text);
             int kt = tree.delete(ref g, ref tree.tree, t);
@@ -139,6 +159,11 @@ namespace BST_Nhom9
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if(txt_sonut.Text =="")
+            {
+                MessageBox.Show("Chưa nhập dữ liệu!");
+                return;
+            }
             bt_random.Enabled = true;
             Graphics g = pt_cay.CreateGraphics();
             tree.deleteall(ref g, ref tree.tree);
@@ -146,6 +171,11 @@ namespace BST_Nhom9
 
         private void bt_pre_Click(object sender, EventArgs e)
         {
+            if (txt_sonut.Text == "")
+            {
+                MessageBox.Show("Chưa nhập dữ liệu!");
+                return;
+            }
             string s = "NLR: ";
             Graphics g = pt_cay.CreateGraphics();
             tree.Preorder(ref g, tree.tree, ref s);
@@ -154,6 +184,11 @@ namespace BST_Nhom9
 
         private void bt_in_Click(object sender, EventArgs e)
         {
+            if (txt_sonut.Text == "")
+            {
+                MessageBox.Show("Chưa nhập dữ liệu!");
+                return;
+            }
             string s = "LNR: ";
             Graphics g = pt_cay.CreateGraphics();
             tree.Inorder(ref g, tree.tree, ref s);
@@ -162,6 +197,11 @@ namespace BST_Nhom9
 
         private void bt_post_Click(object sender, EventArgs e)
         {
+            if (txt_sonut.Text == "")
+            {
+                MessageBox.Show("Chưa nhập dữ liệu!");
+                return;
+            }
             string s = "LRN: ";
             Graphics g = pt_cay.CreateGraphics();
             tree.Postorder(ref g, tree.tree, ref s);
