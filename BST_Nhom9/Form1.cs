@@ -47,5 +47,11 @@ namespace BST_Nhom9
             Frm_Dn Form2 = new Frm_Dn();
             Form2.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 Frm = new Form2();
+            Frm.Show();
+        }
     }
 }

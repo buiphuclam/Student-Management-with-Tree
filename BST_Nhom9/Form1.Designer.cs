@@ -34,6 +34,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.DN_btn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -78,6 +79,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.DN_btn);
             this.groupBox2.Location = new System.Drawing.Point(12, 34);
             this.groupBox2.Name = "groupBox2";
@@ -88,13 +90,23 @@
             // 
             // DN_btn
             // 
-            this.DN_btn.Location = new System.Drawing.Point(43, 30);
+            this.DN_btn.Location = new System.Drawing.Point(6, 30);
             this.DN_btn.Name = "DN_btn";
             this.DN_btn.Size = new System.Drawing.Size(112, 23);
             this.DN_btn.TabIndex = 0;
             this.DN_btn.Text = "Lý thuyết chung";
             this.DN_btn.UseVisualStyleBackColor = true;
             this.DN_btn.Click += new System.EventHandler(this.DN_btn_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(124, 30);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(82, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Demo";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -126,6 +138,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button DN_btn;
+        private System.Windows.Forms.Button button1;
     }
 }
 
